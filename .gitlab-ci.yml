@@ -4,4 +4,5 @@ stages:
 
 maven-build-stage:
     stage: build
+    image: maven:latest
     script: mvn clean install
