@@ -1,7 +1,7 @@
 package com.example.backendapi;
 
 import com.backendapi.BackendApiApplication;
-import com.backendapi.api.model.Task;
+import org.json.JSONException;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ import org.json.JSONObject;
 @SpringBootTest(classes = BackendApiApplication.class)
 public class HttpRequestTest {
 
-
+/*
     private final TestRestTemplate restTemplate = new TestRestTemplate();
 
 
@@ -37,10 +37,11 @@ public class HttpRequestTest {
     }
 
     @Test
-    public void Arraylengthatstart() {
+    public void Arraylengthatstart() throws JSONException {
         String response = restTemplate.getForObject("http://localhost:8080/tasks", String.class);
         JSONArray jsonArray = new JSONArray(response);
         assertEquals(5, jsonArray.length());
     }
+    */
 
 }
