@@ -1,0 +1,7 @@
+stages:
+    - build
+
+
+maven-build-stage:
+    stage: build
+    script: mvn clean install
